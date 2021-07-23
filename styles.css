@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    background-color: var(--violet);
+    background-image: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    margin: 2em;
+}
+
+.logo {
+    margin-bottom: 3em;
+}
+
+.logo>img {
+    width: 200px;
+}
+
+.illustrations {
+    margin-bottom: 3.5em;
+}
+
+.illustrations>img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+}
+
+.description {
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+.button {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.8em 0;
+    border-radius: 50px;
+    background-color: white;
+    color: var(--violet);
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--violet);
+    color: white;
+    transition: all 0.5s;
+}
+
+.icons {
+    width: 50%;
+    margin: 4em auto;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+ion-icon {
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid white;
+    color: white;
+}
+
+ion-icon:hover {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        height: 100vh;
+        background-size: 90% 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        min-width: 1000px;
+        max-width: 1500px;
+        height: 90vh;
+        margin: 4em 6em;
+    }
+
+    .main-content {
+        display: flex;
+        gap: 2em;
+    }
+
+    .illustrations {
+        width: 55%;
+        height: 95%;
+    }
+
+    .illustrations>img {
+        height: 95%;
+    }
+
+    .content {
+        width: 45%;
+    }
+
+    .logo>img {
+        width: 200px;
+    }
+
+    .logo {
+        margin-bottom: 7em;
+    }
+
+    .content {
+        padding: 4em 0 0 1em;
+    }
+
+    .title {
+        font-size: 2.7rem;
+        text-align: left;
+    }
+    
+    .description {
+        font-size: 1.2rem;
+        text-align: left; 
+        margin: 0 1em 1em 2em;
+        opacity: 0.7;
+    }
+
+    .button {
+        margin: 0 0 0 2em;
+    }
+
+    .icons {
+        position: absolute;
+        bottom: 0;
+        right: -200px;
+    }
+}
+
+
+
+
+
+
